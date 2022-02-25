@@ -5,6 +5,9 @@ import "strconv"
 type Json struct {
 }
 
+func NewJson() IfaceJson {
+	return &Json{}
+}
 func (this *Json) SetJson(data map[string]interface{}, values ...interface{}) {
 	if data == nil {
 		return
